@@ -1,0 +1,142 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,
+sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;font-weight:normal;font-style:normal}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+/*  common css */
+.container:before,
+.container:after,
+.sdw-container:before,
+.sdw-container:after,
+.row:before,
+.row:after{
+    display: table;
+    content: " ";
+}
+
+.sdw-container:after,
+.container:after,
+.row:after{
+    clear: both;
+}
+
+ul,ol,li {
+    margin-top: 0;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+.row {width: 100%;position: relative;}
+div[class*="col-"]{position: relative;float: none;}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{width:100%}
+ 
+@media screen and (min-width: 769px){
+      div[class*="col-"]{float: left;}
+    .col-1{ width: 8.33333333%;}
+    .col-2{ width: 16.66666667%;}
+    .col-3{ width: 25%;}
+    .col-4{ width: 33.33333333%;}
+    .col-5{ width: 41.66666667%;}
+    .col-6{ width: 50%;}
+    .col-7{ width: 58.33333333%;}
+    .col-8{ width: 66.66666667%;}
+    .col-9{ width: 75%;}
+    .col-10{ width: 83.33333333%;}
+    .col-11{ width: 91.66666667%;}
+    .col-12{ width: 100%;}
+}
+
+/* main css */
+html{height:100%;overflow: hidden;}
+body,html{min-height: 100%;width: 100vw;overflow-x: hidden;overflow-y: auto;max-width: 1920px;margin: 0 auto;}
+body{width: 100%;margin: 0; padding: 0;font-family: "微软雅黑";max-width: 1920px;}
+ul,li{list-style: none;margin: 0;padding: 0;}
+
+sup{position: relative;top: -0.3em;}
+sup2{position: relative;top: -0.8em;}
+#sdw-wrap{visibility: visible;width: 100%;margin-top:0.5px;overflow: hidden;min-height: 100%;}
+.sdw-container .pa{position: absolute;}
+.container{width: 62.5%;min-width: 768px;margin: 0 auto;}
+.sdw-container img{ width: 100%; display: block;}
+.sdw-container{position: relative;width: 100%;color: #fff;background: #000;}
+
+.sdw-container .bg{position: absolute;left:0;top:0;width: 100%;height: 100%;}
+.sdw-container .title{font-size: 47.5px;margin-bottom:65px;}
+.sdw-container .ctx{font-size: 22.5px;margin-bottom: 60px;opacity: .6;filter: alpha(opacity=60);}
+
+@media (max-width: 1200px) {
+    .sdw-container .title{font-size: 42.75px;margin-bottom:58.5px; }
+    .sdw-container .ctx{font-size: 20.25px;margin-bottom: 54px;}
+}
+.sdw-container  .icons,.sdw-container  .title,.sdw-container  .ctx{ position:relative;}
+.sdw-container  .icons img{transition-property:opacity;}
+.sdw-container .c-red{ color:#d11515;} /*红色*/
+/* .pa{position: absolute;left: 0;top: 0;} */
+
+@media screen and (min-width: 769px){
+    #sdw-wrap .sdw-mobile{display: none;}
+}
+@media (max-width: 768px) {
+    #sdw-wrap .sdw-pc{display: none;}
+}
+
+.sdw-animate{position: relative;}
+
+.sdw-container1{position: relative;}
+.sdw-container1 .sdw1_iphone{position: absolute;bottom: 0;left: 0;top: auto;}
+
+.sdw-container2{min-height: 24.5em;}
+.sdw-container2 .container{position: relative;padding-top: 4em;}
+.sdw-container2 .title{width: 8.5em;}
+.sdw-container2 .container .row{left: 47%;}
+.sdw-container2 .bg{top:auto;height:auto;bottom: 0;}
+.sdw-container2 img{top:0;}
+.sdw-container2 .icons{width: 32.08%;min-width: 308px;margin-bottom: 7.4em;}
+
+.sdw-container3{position: relative;}
+.sdw-container3 .container{position: relative;top:4.5em;}
+.sdw-container3 .col-5{width: 32.667%;}
+.sdw-container3 .container .row{left: 8.5%;}
+.sdw-container3 .bg{top:auto;height:auto;bottom: 0;}
+.sdw-container3 img{top:0;}
+.sdw-container3 .icons{width: 31.25%;min-width: 300px;margin-bottom: 2.4em;}
+.sdw-container3 .ps{position: absolute;bottom: 3%;right: 3%;opacity: .6;filter: alpha(opacity=60);color: #fff;z-index: 100;}
+
+.sdw-container4{position: relative;z-index: 120;}
+.sdw-container4 .container{position: relative;top:3em;}
+.sdw-container4 .col-5{width: 49.667%;}
+.sdw-container4 .container .row{left: 8.5%;}
+.sdw-container4 .bg{top:auto;height:auto;bottom: 0;}
+.sdw-container4 img{top:0;}
+.sdw-container4 .icons{width: 48.667%;min-width: 467.2px;margin-bottom: 2.4em;}
+
+.sdw-container5{z-index: 100;}
+.sdw-container5 .button{width: 10.68%;position: absolute;left: 44.66%;top: 10%;cursor:pointer;}
+.sdw-container5 .ps{position: absolute;right: 6%;bottom: 10%;opacity:.9;}
+
+@media (max-width: 1300px) {
+    .sdw-container3 .ps{right: 1%;}
+}
+@media (max-width: 1250px) {
+    .sdw-container3 .container{top:2.5em;}
+}
+
+body.cbg{overflow-x: hidden;}
+body.cbg{min-width:initial}
+
+
+/* simple background */
+/* #98F898 #FA8072 #DEB887 #FFFF99 #4169E1 #9370DB #3CB371 #808080 #FFB6C1 #66CDAA 
+.sdw-container2 .row img:nth-child(6n+1){background-color: #98F898}
+.sdw-container2 .row img:nth-child(6n+2){background-color: #FA8072}
+.sdw-container2 .row img:nth-child(6n+3){background-color: #DEB887}
+.sdw-container2 .row img:nth-child(6n+4){background-color: #FFFF99}*/
